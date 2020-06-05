@@ -1,35 +1,47 @@
 
 Lag Fix Guide for High/Medium End PCs on EdenServer
 
+Ensure your game client is closed before proceeding with steps 1-4.
+
+
 =============================================
 Step1 Installing DGVOODOO 
 =============================================
 
 Extract DGVOODOO (from this github post) to your POL folder (PlayOnline/SquareEnix/PlayOnlineViwer) and paste files into the folder.
+
 Launch dgVoodooCpl.exe as Administrator once for it to create a config file.
 
 =============================================
 Step2 Installing D3Dcompiler 
 =============================================
 
-Copy or cut d3dcompiler_47. (from this github post)
+Do not overwrite the dll (skip this step) if d3dcompiler_47.dll already exists on your primary disk in either Windows/System32/ or Windows/SysWOW64/.
+
+If you do not have d3dcompiler_47.dll :
+
+1.)Copy or cut d3dcompiler_47. (from this github post)
 
 If you are running a Windows 32 bit operating system, paste it in Windows/System32/
-If you are running a Windows 64 bit operating system, paste it in Windows/SysWOW64/
-Confirm it is being applied to FFXI Edit
 
+If you are running a Windows 64 bit operating system, paste it in Windows/SysWOW64/
+
+
+2.)Confirm it is being applied to FFXI:
+ 
 Launch FFXI and check if the dgVoodoo watermark is in the bottom right, if so it is installed correctly.
 
 =============================================
 Step3 Setting up dgvoodoo 
 =============================================
+Steps1&2 required.
 
-Open dgVoodooCpl.exe again and turn off the watermarks on Glide, and Directx tabs.
+1.)Open dgVoodooCpl.exe again and turn off the watermarks on Glide, and Directx tabs.
 Update the Vram on the Directx tab to above 64mb. 1024mb if your machine will allow it. ( See next step for pushing past 1gb)
 Anisotropic and Antialiasing (MSAA) can be configured higher.
 Save the config in the /SquareEnix/PlayOnlineViewer/ folder.
 
-B.)Pushing past 1GB VRAM allotment requires editing and saving one text file. (close game and dgvoodoo first)
+2.)Pushing past 1GB VRAM allotment requires editing and saving one text file. (close game and dgvoodoo first)
 
 Open dgVoodoo.conf with notepad or any text editor (POL Folder requires run as admin to save)
 
@@ -56,9 +68,18 @@ That last line there is what you want to edit to push your VRAM past what the ol
 VRAM                                = 4096
 
 
+=============================================
+Step4 Correcting Z-Indexing & Reducing d3d8 glow: 
+=============================================
+
+Remember to backup your files before overwriting vital game data.
+
+
+Copy the ROM and ROM5 folders to your ffxi install and merge them with overwrite into \PlayOnline\SquareEnix\FINAL FANTASY XI
+
 
 =============================================
-Step4 Correcting Low Priority Native FFXI Resting 
+Step5 Correcting Low Priority Native FFXI Resting 
 =============================================
 
 Additionally Task Manager --> Details --> EdenXI.exe (Right Click) --> Set Priority --> High should clear up lag as well.
@@ -67,7 +88,10 @@ This setting will revert after the game is closed each time but there are softwa
 https://techcenterdk.wordpress.com/2017/10/08/project-mercury-v1-2-9-0-beta/ (download link on right of page)
 
 
-Optional Bonus Instructions:
+
+
+
+Optional Final Bonus Instructions:
 
 1.)Log into FFXI and be AMAZED (like I was) LAG IS FINALLY GONE
 
