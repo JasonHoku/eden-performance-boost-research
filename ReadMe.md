@@ -1,16 +1,16 @@
 
 Lag Fix Guide for High/Medium End PCs on EdenServer
 
-=================================================================
+=============================================
 Step1 Installing DGVOODOO 
-=================================================================
+=============================================
 
 Extract DGVOODOO (from this github post) to your POL folder (PlayOnline/SquareEnix/PlayOnlineViwer) and paste files into the folder.
 Launch dgVoodooCpl.exe as Administrator once for it to create a config file.
 
-=================================================================
+=============================================
 Step2 Installing D3Dcompiler 
-=================================================================
+=============================================
 
 Copy or cut d3dcompiler_47. (from this github post)
 
@@ -20,9 +20,9 @@ Confirm it is being applied to FFXI Edit
 
 Launch FFXI and check if the dgVoodoo watermark is in the bottom right, if so it is installed correctly.
 
-=================================================================
+=============================================
 Step3 Setting up dgvoodoo 
-=================================================================
+=============================================
 
 Open dgVoodooCpl.exe again and turn off the watermarks on Glide, and Directx tabs.
 Update the Vram on the Directx tab to above 64mb. 1024mb if your machine will allow it. ( See next step for pushing past 1gb)
@@ -35,7 +35,7 @@ Open dgVoodoo.conf with notepad or any text editor (POL Folder requires run as a
 
 In your text editor scroll down to the DirectX section and find:
 
-=================================================================
+=============================================
 [DirectX]
 
 ;  VideoCard: "svga", "internal3D", "geforce_ti_4800", "ati_radeon_8500",
@@ -49,7 +49,7 @@ DisableAndPassThru                  = false
 VideoCard                           = internal3D
 VRAM                                = 1024
 
-=================================================================
+=============================================
 
 That last line there is what you want to edit to push your VRAM past what the old .exe offers. Make it into this for 4GB:
 
@@ -57,9 +57,9 @@ VRAM                                = 4096
 
 
 
-=================================================================
+=============================================
 Step4 Correcting Low Priority Native FFXI Resting 
-=================================================================
+=============================================
 
 Additionally Task Manager --> Details --> EdenXI.exe (Right Click) --> Set Priority --> High should clear up lag as well.
 This setting will revert after the game is closed each time but there are softwares you can use to make them permanent, I recommend TechCenter's Project Mercury (works while running as admin and use reccomended settings):
@@ -68,12 +68,19 @@ https://techcenterdk.wordpress.com/2017/10/08/project-mercury-v1-2-9-0-beta/ (do
 
 
 Optional Bonus Instructions:
+
 1.)Log into FFXI and be AMAZED (like I was) LAG IS FINALLY GONE
+
 2.)???????
+
 3.)Profit.
 
+
+
 Yours Truly,
+
 Lumi
+
 
 ===================
 
