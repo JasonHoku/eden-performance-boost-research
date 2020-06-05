@@ -69,7 +69,7 @@ VRAM                                = 4096
 
 
 =============================================
-Step4 Correcting Z-Indexing & Reducing d3d8 glow: 
+Step4 Correcting Z-Indexing & Reducing DirectX glow: 
 =============================================
 
 Remember to backup your files before overwriting vital game data.
