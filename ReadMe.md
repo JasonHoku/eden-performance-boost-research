@@ -5,15 +5,15 @@ Ensure your game client is closed before proceeding with steps 1-4.
 
 
 =============================================
-Step1 Installing DGVOODOO 
+Step 1 Installing DGVOODOO 
 =============================================
 
-Extract DGVOODOO (from this github post) to your POL folder (PlayOnline/SquareEnix/PlayOnlineViwer) and paste files into the folder.
+Extract DGVOODOO from this github post to PlayOnline/SquareEnix/PlayOnlineViwer. (some older/other install methods may lead to needing the DGVOODOO files in another location... Either besides pol.exe , polboot.exe or the bootloader. (EdenXI.exe)
 
 Launch dgVoodooCpl.exe as Administrator once for it to create a config file.
 
 =============================================
-Step2 Installing D3Dcompiler 
+Step 2 Installing D3Dcompiler 
 =============================================
 
 Do not overwrite the dll (skip this step) if d3dcompiler_47.dll already exists on your primary disk in either Windows/System32/ or Windows/SysWOW64/.
@@ -32,7 +32,7 @@ If you are running a Windows 64 bit operating system, paste it in Windows/SysWOW
 Launch FFXI and check if the dgVoodoo watermark is in the bottom right, if so it is installed correctly.
 
 =============================================
-Step3 Setting up dgvoodoo 
+Step 3 Setting up dgvoodoo 
 =============================================
 Steps1&2 required.
 
@@ -43,7 +43,7 @@ Save the config in the /SquareEnix/PlayOnlineViewer/ folder.
 
 2.)Pushing past 1GB VRAM allotment requires editing and saving one text file. (close game and dgvoodoo first)
 
-Open dgVoodoo.conf with notepad or any text editor (POL Folder requires run as admin to save)
+Open dgVoodoo.conf with notepad or any text editor (Install Directories require run as admin to save)
 
 In your text editor scroll down to the DirectX section and find:
 
@@ -69,7 +69,7 @@ VRAM                                = 4096
 
 
 =============================================
-Step4 Correcting Z-Indexing & Reducing DirectX glow: 
+Step 4 Correcting Z-Indexing & Reducing DirectX glow: 
 =============================================
 
 Remember to backup your files before overwriting vital game data.
@@ -79,7 +79,7 @@ Copy the ROM and ROM5 folders to your ffxi install and merge them with overwrite
 
 
 =============================================
-Step5 Correcting Low Priority Native FFXI Resting 
+Step 5 Correcting Low Priority Native FFXI Resting 
 =============================================
 
 Additionally Task Manager --> Details --> EdenXI.exe (Right Click) --> Set Priority --> High should clear up lag as well.
