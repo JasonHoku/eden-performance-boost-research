@@ -4,7 +4,7 @@ Lag Fix Guide for High/Medium End PCs on EdenServer
 Ensure your game client is closed before proceeding with steps 1-4.
 
 
-=============================================
+========================================
 Step 1 Installing DGVOODOO 
 =============================================
 
@@ -12,7 +12,7 @@ Extract DGVOODOO from this github post to PlayOnline/SquareEnix/PlayOnlineViwer.
 
 Launch dgVoodooCpl.exe as Administrator once for it to create a config file.
 
-=============================================
+========================================
 Step 2 Installing D3Dcompiler 
 =============================================
 
@@ -31,12 +31,12 @@ If you are running a Windows 64 bit operating system, paste it in Windows/SysWOW
  
 Launch FFXI and check if the dgVoodoo watermark is in the bottom right, if so it is installed correctly.
 
-=============================================
+========================================
 Step 3 Setting up dgvoodoo 
 =============================================
 Steps1&2 required.
 
-1.)Open dgVoodooCpl.exe again and turn off the watermarks on Glide, and Directx tabs.
+1.)Open dgVoodooCpl.exe as Admin (for the final time) again and turn off the watermarks on Glide, and Directx tabs.
 Update the Vram on the Directx tab to above 64mb. 1024mb if your machine will allow it. ( See next step for pushing past 1gb)
 Anisotropic and Antialiasing (MSAA) can be configured higher.
 Save the config in the /SquareEnix/PlayOnlineViewer/ folder.
@@ -68,7 +68,7 @@ That last line there is what you want to edit to push your VRAM past what the ol
 VRAM                                = 4096
 
 
-=============================================
+========================================
 Step 4 Correcting Z-Indexing & Reducing DirectX glow: 
 =============================================
 
@@ -78,7 +78,7 @@ Remember to backup your files before overwriting vital game data.
 Copy the ROM and ROM5 folders to your ffxi install and merge them with overwrite into \PlayOnline\SquareEnix\FINAL FANTASY XI
 
 
-=============================================
+========================================
 Step 5 Correcting Low Priority Native FFXI Resting 
 =============================================
 
