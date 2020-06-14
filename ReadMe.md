@@ -45,8 +45,7 @@ Save the config in the /SquareEnix/PlayOnlineViewer/ folder.
 
 Open dgVoodoo.conf with notepad or any text editor (Install Directories require run as admin to save)
 
-In your text editor scroll down to the DirectX section and find:
-
+In your text editor scroll down to the DirectX section and find just below:
 =============================================
 [DirectX]
 
@@ -56,16 +55,24 @@ In your text editor scroll down to the DirectX section and find:
 ;  Filtering: "appdriven", "pointsampled", "bilinear", "linearmip", "trilinear"
 ;             or the integer value of an anisotropic filtering level (1-16)
 
-DisableAndPassThru                  = false
-
-VideoCard                           = internal3D
-VRAM                                = 1024
-
 =============================================
 
-That last line there is what you want to edit to push your VRAM past what the old .exe offers. Make it into this for 4GB:
+And make the next settings look like this.
+DisableAndPassThru                  = false
 
-VRAM                                = 4096
+VideoCard                           = geforce_fx_5700_ultra
+VRAM                                = 1024
+Filtering                           = 2
+DisableMipmapping                   = false
+Resolution                          = max_qhd
+
+
+
+* Note :
+
+For the VRAM setting, this will be dependent upon your graphics card VRAM amount. Higher is not necessarily better (It may take some experimenting or knowledge for this setting to find what works best for you)
+
+
 
 
 ========================================
