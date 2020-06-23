@@ -62,9 +62,9 @@ DisableAndPassThru                  = false
 
 VideoCard                           = geforce_fx_5700_ultra
 VRAM                                = 1024
-Filtering                           = 2
-DisableMipmapping                   = false
-Resolution                          = max_qhd
+Filtering                           = 1
+DisableMipmapping                   = true
+Resolution                          = max
 
 
 
@@ -100,7 +100,7 @@ https://techcenterdk.wordpress.com/2017/10/08/project-mercury-v1-2-9-0-beta/ (do
 
 Optional Final Bonus Instructions:
 
-1.)Log into FFXI and be AMAZED (like I was) LAG IS FINALLY GONE
+1.)Log into FFXI and be AMAZED (like I was)
 
 2.)???????
 
