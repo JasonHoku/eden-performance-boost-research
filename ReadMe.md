@@ -1,20 +1,22 @@
 
-Lag Fix Guide for High/Medium End PCs on EdenServer
+==
+Lag Improvements on EdenServer
+==
 
-Ensure your game client is closed before proceeding with steps 1-4.
+**Ensure your game client is closed before proceeding with steps 1-4.**
 
 
-========================================
+======================================
 Step 1 Installing DGVOODOO 
-=============================================
+===========================================
 
 Extract DGVOODOO from this github post to PlayOnline/SquareEnix/PlayOnlineViwer. (some older/other install methods may lead to needing the DGVOODOO files in another location... Either besides pol.exe , polboot.exe or the bootloader. (EdenXI.exe)
 
 Launch dgVoodooCpl.exe as Administrator once for it to create a config file.
 
-========================================
+=======================================
 Step 2 Installing D3Dcompiler 
-=============================================
+==========================================
 
 Do not overwrite the dll (skip this step) if d3dcompiler_47.dll already exists on your primary disk in either Windows/System32/ or Windows/SysWOW64/.
 
@@ -31,17 +33,21 @@ If you are running a Windows 64 bit operating system, paste it in Windows/SysWOW
  
 Launch FFXI and check if the dgVoodoo watermark is in the bottom right, if so it is installed correctly.
 
-========================================
+=======================================
 Step 3 Setting up dgvoodoo 
-=============================================
+==========================================
 Steps1&2 required.
+
 
 1.)Open dgVoodooCpl.exe as Admin (for the final time) again and turn off the watermarks on Glide, and Directx tabs.
 Update the Vram on the Directx tab to above 64mb. 1024mb if your machine will allow it. ( See next step for pushing past 1gb)
 Anisotropic and Antialiasing (MSAA) can be configured higher.
 Save the config in the /SquareEnix/PlayOnlineViewer/ folder.
 
-2.)Pushing past 1GB VRAM allotment requires editing and saving one text file. (close game and dgvoodoo first)
+Ex. settings:
+https://i.imgur.com/bqWMypt.png
+
+2.) (optional) Pushing past 1GB VRAM allotment requires editing and saving one text file. (close game and dgvoodoo first)
 
 Open dgVoodoo.conf with notepad or any text editor (Install Directories require run as admin to save)
 
@@ -64,20 +70,20 @@ VideoCard                           = geforce_fx_5700_ultra
 VRAM                                = 1024
 Filtering                           = 1
 DisableMipmapping                   = true
-Resolution                          = max
+Resolution                          = unforced
 
 
 
 * Note :
 
-For the VRAM setting, this will be dependent upon your graphics card VRAM amount. Higher is not necessarily better (It may take some experimenting or knowledge for this setting to find what works best for you)
+For the VRAM setting, this will be dependent upon your graphics card VRAM amount. Higher is not necessarily better if your graphics card memory isn't high enough (It may take some experimenting or knowledge for this setting to find what works best for you)
 
 
 
 
-========================================
+=======================================
 Step 4 Correcting Z-Indexing & Reducing DirectX glow: 
-=============================================
+==========================================
 
 Remember to backup your files before overwriting vital game data.
 
@@ -85,9 +91,9 @@ Remember to backup your files before overwriting vital game data.
 Copy the ROM and ROM5 folders to your ffxi install and merge them with overwrite into \PlayOnline\SquareEnix\FINAL FANTASY XI
 
 
-========================================
+=======================================
 Step 5 Correcting Low Priority Native FFXI Resting 
-=============================================
+==========================================
 
 Additionally Task Manager --> Details --> EdenXI.exe (Right Click) --> Set Priority --> High should clear up lag as well.
 This setting will revert after the game is closed each time but there are softwares you can use to make them permanent, I recommend TechCenter's Project Mercury (works while running as admin and use reccomended settings):
