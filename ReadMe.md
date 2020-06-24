@@ -47,11 +47,11 @@ Save the config in the /SquareEnix/PlayOnlineViewer/ folder.
 Ex. settings:
 https://i.imgur.com/bqWMypt.png
 
-2.) (optional) Pushing past 1GB VRAM allotment requires editing and saving one text file. (close game and dgvoodoo first)
+# 2.) (optional) Pushing past 1GB VRAM allotment requires editing and saving one text file. (close game and dgvoodoo first)
 
 Open dgVoodoo.conf with notepad or any text editor (Install Directories require run as admin to save)
 
-## In your text editor scroll down to the DirectX section and find just below:
+**(optional) In your text editor scroll down to the DirectX section and find just below:**
 
 [DirectX]
 
@@ -76,7 +76,7 @@ Resolution                          = unforced
 
 * Note :
 
-For the VRAM setting, this will be dependent upon your graphics card VRAM amount. Higher is not necessarily better if your graphics card memory isn't high enough (It may take some experimenting or knowledge for this setting to find what works best for you)
+For the VRAM setting, this will be dependent upon your graphics card VRAM amount. Higher is not necessarily better if your graphics card memory isn't high enough. You can look up your graphics card VRAM amount or test around with this setting. I reccomend 20-40% of total VRAM if you are dual boxing.
 
 
 
