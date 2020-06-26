@@ -10,7 +10,7 @@ Lag Improvements on EdenServer
 ## Step 1 Installing dgvoodoo 
 
 
-Extract DGVOODOO from this github post to PlayOnline/SquareEnix/PlayOnlineViwer. (some older/other install methods may lead to needing the DGVOODOO files in another location... Either besides pol.exe , polboot.exe or the bootloader. (EdenXI.exe)
+Extract/copy the contents of DGVOODOO from this github post to PlayOnline/SquareEnix/PlayOnlineViwer. (some older/other install methods may lead to needing the DGVOODOO files in another location... Either besides pol.exe , polboot.exe or the bootloader. (EdenXI.exe)
 
 Launch dgVoodooCpl.exe as Administrator once for it to create a config file.
 
