@@ -10,24 +10,16 @@ Lag Improvements on EdenServer
 ## Step 1 Installing dgvoodoo 
 
 
-Extract/copy the contents of DGVOODOO from this github post to PlayOnline/SquareEnix/PlayOnlineViwer. (some older/other install methods may lead to needing the DGVOODOO files in another location... Either besides pol.exe , polboot.exe or the bootloader. (EdenXI.exe)
+Extract/copy the contents of DGVOODOO from this github post to \PlayOnline\Ashita\ffxi-bootmod for Ashita or C:\Program Files (x86)\PlayOnline\SquareEnix\PlayOnlineViewer for Windower. 
 
-Launch dgVoodooCpl.exe as Administrator once for it to create a config file.
-
-
-## Step 2 Installing D3Dcompiler (requirement of dgvoodoo)
+Launch dgVoodooCpl.exe as Administrator once and to create a config file, click the add button at the top of the app and select EdenXI.exe. Apply & Close.
 
 
-Do not overwrite the dll (skip this step) if d3dcompiler_47.dll already exists on your primary disk in either Windows/System32/ or Windows/SysWOW64/.
+## Step 2 Installing D3Dcompiler (Only if dgvoodoo doesn't work)
 
-If you do not have d3dcompiler_47.dll :
-
-1.)Copy or cut d3dcompiler_47. (from this github post)
-
-If you are running a Windows 32 bit operating system, paste it in Windows/System32/
+Extract/copy the contents of DGVOODOO/contents/ to:
 
 If you are running a Windows 64 bit operating system, paste it in Windows/SysWOW64/
-
 
 2.)Confirm it is being applied to FFXI:
  
@@ -38,41 +30,10 @@ Launch FFXI and check if the dgVoodoo watermark is in the bottom right, if so it
 
 Steps1&2 required.
 
-
 1.)Open dgVoodooCpl.exe as Admin (for the final time) again and turn off the watermarks on Glide, and Directx tabs.
-Update the Vram on the Directx tab to above 64mb. 1024mb if your machine will allow it. ( See next step for pushing past 1gb)
-Anisotropic and Antialiasing (MSAA) can be configured higher.
-Save the config in the /SquareEnix/PlayOnlineViewer/ folder.
-
+Update the Vram on the Directx tab *See Note.
 Ex. settings:
 https://i.imgur.com/bqWMypt.png
-
-# 2.) (optional) Pushing past 1GB VRAM allotment requires editing and saving one text file. (close game and dgvoodoo first)
-
-Open dgVoodoo.conf with notepad or any text editor (Install Directories require run as admin to save)
-
-**(optional) In your text editor scroll down to the DirectX section and find just below:**
-
-[DirectX]
-
-;  VideoCard: "svga", "internal3D", "geforce_ti_4800", "ati_radeon_8500",
-;             "matrox_parhelia-512", "geforce_fx_5700_ultra"
-;       VRAM: in MBs
-;  Filtering: "appdriven", "pointsampled", "bilinear", "linearmip", "trilinear"
-;             or the integer value of an anisotropic filtering level (1-16)
-
-=============================================
-
-And make the next settings look like this.
-DisableAndPassThru                  = false
-
-VideoCard                           = geforce_fx_5700_ultra
-VRAM                                = 1024
-Filtering                           = 1
-DisableMipmapping                   = true
-Resolution                          = unforced
-
-
 
 * Note :
 
