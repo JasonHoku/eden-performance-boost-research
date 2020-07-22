@@ -12,7 +12,7 @@ Lag Improvements on EdenServer
 
 Extract/copy the contents of DGVOODOO from this github post to \PlayOnline\Ashita\ffxi-bootmod for Ashita or C:\Program Files (x86)\PlayOnline\SquareEnix\PlayOnlineViewer for Windower. 
 
-Launch dgVoodooCpl.exe as Administrator once and to create a config file, click the add button at the top of the app and select EdenXI.exe. Apply & Close.
+Launch dgVoodooCpl.exe as Administrator once and to create a config file, click the add button at the top of the app and select the folder EdenXI.exe is in from the above step. Apply & Close.
 
 
 ## Step 2 Installing D3Dcompiler (Only if dgvoodoo doesn't work)
