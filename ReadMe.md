@@ -1,6 +1,6 @@
 
 
-Lag Improvements on EdenServer
+Cumilitive research for performance increasing and visual lag reduction on EdenServer
 ===
 
 **Ensure your game client is closed before proceeding with steps 1-4.**
